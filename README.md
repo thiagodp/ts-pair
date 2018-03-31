@@ -20,8 +20,11 @@ pair.second = "hi";
 
 console.log( 'JSON', pair.toJSON() ); // Pair is { "first": 2, "second": "hi" }
 
+let [ first, second ] = pair.toArray();
+console.log( first, second ); // 2, hi
+
 // chainable
-console.log( pair.setFirst( 10 ).setSecond( "bye" ).toString() ); // 10, bye
+console.log( pair.setFirst( 10 ).setSecond( "bye" ).toString() ); // [ 10, bye ]
 
 let otherPair = new Pair( 20, "bye" );
 console.log( otherPair.equals( pair ) ? 'equal': 'different' ); // different
@@ -34,7 +37,7 @@ aImmutable.first = "baz"; // Error
 
 ## Available Types
 
-- `IPair` interface, with `getFirst()`, `getSecond()`, `equals()`, and `toJSON()`
+- `IPair` interface, with `getFirst()`, `getSecond()`, `equals()`, `toArray()`, and `toJSON()`
 - `AbstractPair` that implements `IPair` and declares `toString()`
 - `Pair` that extends `AbstractPair`
 - `ImmutablePair` that extends `AbstractPair`

@@ -6,6 +6,8 @@ export interface IPair< FirstType, SecondType > {
 
     equals( other: IPair< FirstType, SecondType > ): boolean;
 
+    toArray(): any[];
+
     toJSON(): string;
 
 }
@@ -26,6 +28,10 @@ export abstract class AbstractPair< FirstType, SecondType > implements IPair< Fi
 
     equals( other: IPair< FirstType, SecondType > ): boolean {
         return other.getFirst() === this.first && other.getSecond() === this.second;
+    }
+
+    toArray(): any[] {
+        return [ this._first, this._second ];
     }
 
     toJSON(): string {

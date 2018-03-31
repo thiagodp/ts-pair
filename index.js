@@ -24,6 +24,9 @@ var AbstractPair = /** @class */ (function () {
     AbstractPair.prototype.equals = function (other) {
         return other.getFirst() === this.first && other.getSecond() === this.second;
     };
+    AbstractPair.prototype.toArray = function () {
+        return [this._first, this._second];
+    };
     AbstractPair.prototype.toJSON = function () {
         var obj = { first: this._first, second: this._second };
         return JSON.stringify(obj);
