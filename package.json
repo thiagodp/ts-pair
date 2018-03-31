@@ -1,6 +1,6 @@
 {
   "name": "ts-pair",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pair class for TypeScript and JavaScript",
   "main": "index.js",
   "types": "index.d.ts",
@@ -13,8 +13,7 @@
     "type": "git",
     "url": "https://github.com/thiagodp/ts-pair"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "typescript": "^2.7.2"
   }
