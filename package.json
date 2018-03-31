@@ -1,0 +1,21 @@
+{
+  "name": "ts-pair",
+  "version": "1.0.0",
+  "description": "Pair class for TypeScript and JavaScript",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "thiagodp",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagodp/ts-pair"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  }
+}

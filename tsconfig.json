@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "outDir": ".",
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "allowJs": false,
+        "typeRoots": [
+            "./node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "jest": {
+        "transform": {
+          ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+        "moduleFileExtensions": [
+          "ts",
+          "tsx",
+          "js",
+          "jsx"
+        ]
+    }
+}
